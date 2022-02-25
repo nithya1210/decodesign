@@ -17,4 +17,7 @@ class Dashboard extends CI_Controller {
 		$template['script'] = 'admin/Dashboard/script';
 		$this->load->view('template', $template);
 	}
+	public function tess(){
+		
+	}
 }
