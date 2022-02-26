@@ -10,7 +10,7 @@ class Dashboard extends CI_Controller {
 	// 	$this->load->model('General_model');
 	// 	$this->load->model('Dashboard_model');
 	// }
-
+}
 	public function index(){
 		// $template['fin_year']  = $this->Dashboard_model->fin_year();
 		$template['body'] = 'admin/Dashboard/list';
@@ -18,6 +18,6 @@ class Dashboard extends CI_Controller {
 		$this->load->view('template', $template);
 	}
 	public function tess(){
-		
+
 	}
 }

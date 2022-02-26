@@ -25,11 +25,11 @@
                         <h3>Sign In</h3>
                         <!-- <p>Please sign in to continue to Voler.</p> -->
                     </div>
-                    <form action="#">
+                    <form method="post" action="<?php echo base_url();?>Login/">
                         <div class="form-group position-relative has-icon-left">
                             <label for="username">Username</label>
                             <div class="position-relative">
-                                <input type="text" class="form-control" id="username">
+                                <input type="text" name="username" class="form-control" id="username" value="">
                                 <div class="form-control-icon">
                                     <i data-feather="user"></i>
                                 </div>
@@ -38,12 +38,9 @@
                         <div class="form-group position-relative has-icon-left">
                             <div class="clearfix">
                                 <label for="password">Password</label>
-                                <!-- <a href="auth-forgot-password.html" class='float-right'>
-                                    <small>Forgot password?</small>
-                                </a> -->
                             </div>
                             <div class="position-relative">
-                                <input type="text" class="form-control" id="password">
+                                <input type="text" class="form-control" name="password" id="password" value="">
                                 <div class="form-control-icon">
                                     <i data-feather="lock"></i>
                                 </div>
@@ -51,29 +48,15 @@
                         </div>
 
                         <div class='form-check clearfix my-4'>
-                            <div class="checkbox float-left">
-                                <input type="checkbox" id="checkbox1" class='form-check-input' >
-                                <label for="checkbox1">Remember me</label>
-                            </div>
                             <div class="float-right">
                                 <a href="<?php echo base_url() ?>Register">Don't have an account?</a>
                             </div>
                         </div>
                         <div class="clearfix">
-                            <button class="btn btn-primary float-right">LOGIN</button>
+                          <?php if(isset($message)) echo $message; ?>
+                            <button class="btn btn-primary float-right"> LOGIN</button>
                         </div>
                     </form>
-                    <!-- <div class="divider">
-                        <div class="divider-text">OR</div>
-                    </div> -->
-                    <div class="row">
-                        <!-- <div class="col-sm-6">
-                            <button class="btn btn-block mb-2 btn-primary"><i data-feather="facebook"></i> Facebook</button>
-                        </div> -->
-                        <!-- <div class="col-sm-6">
-                            <button class="btn btn-block mb-2 btn-secondary"><i data-feather="github"></i> Github</button>
-                        </div> -->
-                    </div>
                 </div>
             </div>
         </div>
