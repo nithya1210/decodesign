@@ -5,15 +5,8 @@ class Dynamictextboxces_model extends CI_Model{
 	public function __construct(){
 		parent::__construct();
 	}
-	public function get_hero_text(){
-    $query=$this->db->select('dynamic_txt_value')->get('tbl_dynamic_txtbox');
-    return $query->row();
 
-	}
-	public function get_hero_text_description(){
-    $query=$this->db->select('dynamic_txt_value')->get('tbl_dynamic_txtbox');
-    return $query->row();
-	}
+
 	public function  changeHeroText($text){
 		$contion=[
 			'dynamic_txt_name'=>'herotext',
@@ -29,6 +22,7 @@ class Dynamictextboxces_model extends CI_Model{
 			return false;
 		}
 	}
+
 
 
 }

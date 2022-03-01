@@ -17,7 +17,7 @@
       <li class="active"></li>
     </ol>
   </section>
-  <form class="form-horizontal" method="POST" action="<?php echo base_url();?>Herotextboxces/changeHeroText" enctype="multipart/form-data">
+  <form class="form-horizontal" method="POST" action="<?php echo base_url();?>Hero/changeHeroText" enctype="multipart/form-data">
     <section class="content">
 
       <div class="row">

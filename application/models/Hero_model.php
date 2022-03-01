@@ -1,19 +1,19 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Herotextboxces_model extends CI_Model{
+class Hero_model extends CI_Model{
 
 	public function __construct(){
 		parent::__construct();
 	}
 	public function get_hero_text(){
-    $query=$this->db->select('dynamic_txt_value')->get('tbl_dynamic_txtbox');
+    $query=$this->db->select('dynamic_txt_value')->where('dynamic_txt_name','herotext')->get('tbl_dynamic_txtbox');
     return $query->row();
 
 	}
 	public function get_hero_text_description(){
- 	 $query=$this->db->select('dynamic_txt_value')->get('tbl_dynamic_txtbox');
- 	 return $query->row();
-  }
+    $query=$this->db->select('dynamic_txt_value')->where('dynamic_txt_name','herotextdescription')->get('tbl_dynamic_txtbox');
+    return $query->row();
+	}
 	public function  changeHeroText($text){
 		$contion=[
 			'dynamic_txt_name'=>'herotext',

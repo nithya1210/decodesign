@@ -13,7 +13,7 @@
             </a>
           </li>
           <li class="sidebar-item active ">
-            <a href="<?php echo base_url(); ?>Herotextboxces/" class='sidebar-link'>
+            <a href="<?php echo base_url(); ?>Hero/" class='sidebar-link'>
               <i data-feather="home" width="20"></i>
               <span>Herotextboxces</span>
             </a>
