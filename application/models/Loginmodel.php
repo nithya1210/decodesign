@@ -11,7 +11,6 @@ class Loginmodel extends CI_Model{
             return false;
         }
     }
-
     public function update_data($condition,$update_data){
       $this->db->where($condition);
       $query=$this->db->update('tbl_login', $update_data);

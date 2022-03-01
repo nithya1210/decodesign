@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,8 +87,8 @@
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
-          <h1>Brilliant designing solutions<span>.</span></h1>
-          <h2>We are team of talented wall designers</h2>
+          <h1><?php echo $hero; ?><span>.</span></h1>
+          <h2><?php echo $heroDescription; ?></h2>
         </div>
       </div>
 

@@ -17,7 +17,7 @@ class Login extends CI_Controller{
     );
     $result = $this->Loginmodel->checkUserLogin($data);
     if($result){
-      redirect('Dashboard');
+    redirect('Dashboard');
 }
 
 else{
