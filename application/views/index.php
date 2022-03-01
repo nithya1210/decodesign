@@ -96,31 +96,31 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-store-line"></i>
-            <h3><a href="">Creative Designing</a></h3>
+            <h3><a href=""><?php echo $storeText; ?></a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">Experienced Workers</a></h3>
+            <h3><a href=""><?php echo $chartText; ?></a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">Quality Assurance</a></h3>
+            <h3><a href=""><?php echo $calendarText; ?></a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-paint-brush-line"></i>
-            <h3><a href="">Cost Effectiveness</a></h3>
+            <h3><a href=""><?php echo $paintText; ?></a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-database-2-line"></i>
-            <h3><a href="">Specialiced Aspects</a></h3>
+            <h3><a href=""><?php echo $databaseText; ?></a></h3>
           </div>
         </div>
       </div>

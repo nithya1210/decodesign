@@ -6,9 +6,9 @@ class Admin extends CI_Controller {
 	$this->load->helper(array('url'));
 	$this->load->library('session');
 }
+
 	public function index(){
 			$this->load->view('admin/Login/login');
 	}
-
 
 }

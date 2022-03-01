@@ -31,17 +31,37 @@
             <div class="col-lg-8">
               <div class="panel panel-danger">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><b>ADD Herotextboxces </b></h3>
+                  <h3 class="panel-title"><b>Add HeroText </b></h3>
                   <!-- <div class="col-md-6"> -->
                   </div>
                   <div class="form-group row">
                     <div class="col-md-6">
-                      <label class="fsize">Herotextboxces Name</label>
-                      <input type="text" class="form-control" name="herotextboxces_name" value="">
+                      <label class="fsize">HeroText Name</label>
+                      <input type="text" class="form-control" name="herotext_name" value="">
                     </div>
                     <div class="col-md-6">
-                      <label class="fsize">Herotextboxces Description</label>
-                      <input type="text" class="form-control" name="herotextboxces_description" value="">
+                      <label class="fsize">HeroText Description</label>
+                      <input type="text" class="form-control" name="herotext_description" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fsize">Store Text</label>
+                      <input type="text" class="form-control" name="store_text" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fsize">Chart Text</label>
+                      <input type="text" class="form-control" name="chart_text" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fsize">Calender Text</label>
+                      <input type="text" class="form-control" name="calendar_text" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fsize">Paint Text</label>
+                      <input type="text" class="form-control" name="paint_text" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fsize">Database Text</label>
+                      <input type="text" class="form-control" name="database_text" value="">
                     </div>
                     </div>
                   </div>
@@ -54,7 +74,7 @@
                   </div>
                   <div class="col-md-4">
                     <button type="button" class="btn btn-danger" onclick="window.location.reload();">Cancel</button>
-                    <button type="submit" name="submit"class="btn btn-primary">Add Herotextboxces</button>
+                    <button type="submit" name="submit"class="btn btn-primary">Add HeroText</button>
                   </div>
                 </div>
               </div>
