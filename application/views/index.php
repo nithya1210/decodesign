@@ -136,7 +136,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/decoimages/mural/mural2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/heroimages/<?php echo $heroImage;?>" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3><?php echo $aboutCaption; ?></h3>

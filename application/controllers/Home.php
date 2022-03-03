@@ -7,6 +7,7 @@ class Home extends CI_Controller {
 		parent::__construct();
 		$this->load->model('General_model');
 		$this->load->model('Hero_model');
+		$this->load->model('Heroimage_model');
 	}
 
 	public function index(){
@@ -60,9 +61,17 @@ class Home extends CI_Controller {
 		//contact
 		$heroText['contactCaption']=$this->getcontactCaption();
 		$heroText['contactDescription']=$this->getcontactDescription();
+
+    $heroText['heroImage']=$this->getheroImage();
 		$this->load->view('index',$heroText);
 	}
+
 	//home Section
+	public function getheroImage(){
+	 $result=$this->Heroimage_model->get_hero_image();
+	 return $result ->dynamic_image_value;
+ }
+
 	public function getHerotext(){
 		$result=$this->Hero_model->get_hero_text();
 		return $result ->dynamic_txt_value;
