@@ -255,6 +255,7 @@ class Home extends CI_Controller {
 	}
 
 	public function getportfolioDescription(){
+
 		$result=$this->Hero_model->get_portfolio_description();
 		return $result ->dynamic_txt_value;
 	}
