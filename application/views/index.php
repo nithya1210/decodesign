@@ -1,4 +1,9 @@
+<script type="text/javascript">
+  const img =document.getElementById("hero").src = SRC;
 
+  img.src = "assets/img/heroimages/".$heroImage;
+// console.log(img.src);
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +18,7 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+<script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -28,7 +33,15 @@
 
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet">
-
+<style media="screen">
+#hero {
+  width: 100%;
+  height: 100vh;
+  /* background: url("assets/img/heroimages/<?php echo $heroImage; ?>") top center; */
+  background-size: cover;
+  position: relative;
+}
+</style>
   <!-- =======================================================
   * Template Name: Gp - v4.7.0
   * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
@@ -257,7 +270,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
               <h4><a href=""><?php echo $servicesSubcaption4; ?></a></h4>
-              <!-- <p><?php if(!empty($servicesSubdescription12)){ echo $servicesSubdescription12;} ?></p> -->
+              <p><?php if(!empty($servicesSubdescription12)){ echo $servicesSubdescription12;} ?></p>
             </div>
           </div>
 

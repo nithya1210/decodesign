@@ -25,7 +25,7 @@ class SiteImages extends CI_Controller {
 		$condition=[
 			'image_id'=>$field_id
 		];
-		$config['upload_path'] = 'assets/img/Imagess';
+		$config['upload_path'] = 'assets/img/heroimages/';
 		$config['allowed_types'] = 'jpg|jpeg|png|gif';
 		$config['file_name'] = $image_name;
 		$pic = $image_name;

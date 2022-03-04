@@ -21,7 +21,7 @@ class Images extends CI_Controller {
 			'dynamic_image_field' => $_FILES['aboutus_image']['name'],
 			'dynamic_image_status'=>1
 		);
-		$config['upload_path'] = 'assets/img/Imagess';
+		$config['upload_path'] = 'assets/img/heroimages';
 		$config['allowed_types'] = 'jpg|jpeg|png|gif';
 		$config['file_name'] = $_FILES['aboutus_image']['name'];
 		$pic = $_FILES['aboutus_image']['name'];
