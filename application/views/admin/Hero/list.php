@@ -1,26 +1,14 @@
-<style type="text/css">
-.fsize
-{
-  font-size: 14px;
-  font-family: 'Rubik', sans-serif;
+<style media="screen">
+  h3{
+text-align: center;
 }
 </style>
+</style>
 <div class="content-wrapper">
-  <section class="content-header">
-    <!-- <h1>
-    ADD DYNAMICTEXTBOXCES
-    <small id="date" class="col-md-4"></small>
-  </h1> -->
-  <ol class="breadcrumb">
-    <!-- <li><a href="<?php echo base_url();?>Dashboard"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li><a href="<?php echo base_url();?>District/"><i class="fa fa-dashboard"></i> Back to List</a></li> -->
-    <li class="active"></li>
-  </ol>
-</section>
+<section class="content-header">
 <form class="form-horizontal" method="POST" action="<?php echo base_url();?>Hero/changeHeroText" enctype="multipart/form-data">
   <!-- <form class="form-horizontal" method="POST" action="<?php echo base_url();?>Hero/updateFields" enctype="multipart/form-data"> -->
   <section class="content">
-
     <div class="row">
       <div class="box">
         <div class="box-header">
@@ -33,7 +21,6 @@
             <div class="panel panel-danger">
               <div class="panel-heading">
                 <h3 class="panel-title"><b>Add Home Text </b></h3>
-                <!-- <div class="col-md-6"> -->
               </div>
               <div class="form-group row">
                 <div class="col-md-6">
@@ -63,10 +50,6 @@
                 <div class="col-md-6">
                   <label class="fsize">Database Text</label>
                   <input type="text" class="form-control" name="database_text" value="">
-                </div>
-                <div class="col-md-6">
-                  <label class="fsize">HERO image</label>
-                  <input type="file" class="form-control" name="database_text" value="">
                 </div>
               </div>
             </div>
@@ -203,7 +186,7 @@
               </div>
             </div>
             <div class="panel-heading">
-              <h3 class="panel-title"><b>Add PORTFOLIO Text </b></h3>
+              <h3 class="panel-title"><b>Add Portfolio Text </b></h3>
               <!-- <div class="col-md-6"> -->
             </div>
             <div class="form-group row">
@@ -239,7 +222,7 @@
               </div>
             </div>
             <div class="panel-heading">
-              <h3 class="panel-title"><b>Add contact Text </b></h3>
+              <h3 class="panel-title"><b>Add Contact Text </b></h3>
               <!-- <div class="col-md-6"> -->
             </div>
             <div class="form-group row">

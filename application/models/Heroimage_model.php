@@ -6,12 +6,12 @@ class Heroimage_model extends CI_Model{
 		parent::__construct();
 	}
 
-	public function  changeImage($text){
+	public function  changeaboutImage($aboutImage){
  	 $contion=[
- 		 'dynamic_image_name'=>'apple-touch-icon.png',
+ 		 'dynamic_image_field'=>'aboutus_image',
  	 ];
  	 $insert_aaray=[
- 		 'dynamic_image_value'=>$text,
+ 		 'dynamic_image_value'=>$aboutImage,
  	 ];
  	 $result=$this->db->where($contion)->update('tbl_dynamic_image', $insert_aaray);
  	 if($result){
@@ -22,12 +22,18 @@ class Heroimage_model extends CI_Model{
  	 }
   }
 
-	public function get_hero_image(){
-		$query=$this->db->select('dynamic_image_value')->where('dynamic_image_name','apple-touch-icon.png')->get('tbl_dynamic_image');
+	public function get_about_image(){
+		$query=$this->db->select('dynamic_image_value')->where('dynamic_image_field','aboutus_image')->get('tbl_dynamic_image');
 		return $query->row();
 	}
-	// public function updateFields(){
-	//   $currentValue
+	// public function get_aboutsub_image(){
+	// 	$query=$this->db->select('dynamic_image_value')->where('dynamic_image_field','about_subimage')->get('tbl_dynamic_image');
+	// 	return $query->row();
 	// }
+   public function updateimage($table,$condition,$update_array){
+      $query = $this->db->where($condition)->update($table,$update_array);
+ 			return $query ? true : false;
+  }
+
 
 }

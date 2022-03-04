@@ -62,15 +62,20 @@ class Home extends CI_Controller {
 		$heroText['contactCaption']=$this->getcontactCaption();
 		$heroText['contactDescription']=$this->getcontactDescription();
 
-    $heroText['heroImage']=$this->getheroImage();
+    $heroText['aboutImage']=$this->getaboutImage();
+    // $heroText['aboutsubImage']=$this->getaboutsubImage();
 		$this->load->view('index',$heroText);
 	}
 
 	//home Section
-	public function getheroImage(){
-	 $result=$this->Heroimage_model->get_hero_image();
+	public function getaboutImage(){
+	 $result=$this->Heroimage_model->get_about_image();
 	 return $result ->dynamic_image_value;
  }
+//  public function getaboutsubImage(){
+//  $result=$this->Heroimage_model->get_aboutsub_image();
+//  return $result ->dynamic_image_value;
+// }
 
 	public function getHerotext(){
 		$result=$this->Hero_model->get_hero_text();

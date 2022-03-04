@@ -40,6 +40,10 @@
                   <label class="fsize">HERO image</label>
                   <input type="file" class="form-control" name="hero_image" value="">
                 </div>
+                <div class="col-md-6">
+                  <label class="fsize">aboutsubimage</label>
+                  <input type="file" class="form-control" name="about_subimage" value="">
+                </div>
               </div>
             </div>
             </div>
