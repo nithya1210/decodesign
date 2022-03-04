@@ -505,10 +505,10 @@ class Hero_model extends CI_Model{
 		$query=$this->db->select('dynamic_txt_value')->where('dynamic_txt_name','servicessubcaption4')->get('tbl_dynamic_txtbox');
 		return $query->row();
 	}
-	public function get_services_subdescription4(){
-		$query=$this->db->select('dynamic_txt_value')->where('dynamic_txt_name',' servicessubdescription4')->get('tbl_dynamic_txtbox');
-		return $query->row();
-	}
+	// public function get_services_subdescription4(){
+	// 	$query=$this->db->select('dynamic_txt_value')->where('dynamic_txt_name',' servicessubdescription4')->get('tbl_dynamic_txtbox');
+	// 	return $query->row();
+	// }
 	public function get_services_subcaption5(){
 		$query=$this->db->select('dynamic_txt_value')->where('dynamic_txt_name','servicessubcaption5')->get('tbl_dynamic_txtbox');
 		return $query->row();

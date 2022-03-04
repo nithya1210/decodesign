@@ -1,26 +1,26 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Heroimage_model extends CI_Model{
+class Images_model extends CI_Model{
 
 	public function __construct(){
 		parent::__construct();
 	}
 
-	public function  changeaboutImage($aboutImage){
- 	 $contion=[
- 		 'dynamic_image_field'=>'aboutus_image',
- 	 ];
- 	 $insert_aaray=[
- 		 'dynamic_image_value'=>$aboutImage,
- 	 ];
- 	 $result=$this->db->where($contion)->update('tbl_dynamic_image', $insert_aaray);
- 	 if($result){
- 		 return true;
- 	 }
- 	 else {
- 		 return false;
- 	 }
-  }
+	// public function  changeImage($text){
+ 	//  $contion=[
+ 	// 	 'dynamic_image_field'=>'apple-touch-icon.png',
+ 	//  ];
+ 	//  $insert_aaray=[
+ 	// 	 'dynamic_image_value'=>$text,
+ 	//  ];
+ 	//  $result=$this->db->where($contion)->update('tbl_dynamic_image', $insert_aaray);
+ 	//  if($result){
+ 	// 	 return true;
+ 	//  }
+ 	//  else {
+ 	// 	 return false;
+ 	//  }
+  // }
 
 	public function get_about_image(){
 		$query=$this->db->select('dynamic_image_value')->where('dynamic_image_field','aboutus_image')->get('tbl_dynamic_image');

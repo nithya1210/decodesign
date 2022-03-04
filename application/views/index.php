@@ -183,7 +183,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
+          <div class="image col-lg-6" style='background-image: url("assets/img/heroimages/<?php echo $aboutsubImage; ?>");' data-aos="fade-right"></div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-receipt"></i>
@@ -257,7 +257,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
               <h4><a href=""><?php echo $servicesSubcaption4; ?></a></h4>
-              <p><?php echo $servicesSubdescription12; ?></p>
+              <!-- <p><?php if(!empty($servicesSubdescription12)){ echo $servicesSubdescription12;} ?></p> -->
             </div>
           </div>
 

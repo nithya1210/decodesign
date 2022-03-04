@@ -24,6 +24,12 @@
               <span>HeroImage</span>
             </a>
           </li>
+          <li class="sidebar-item active ">
+            <a href="<?php echo base_url(); ?>SiteImages/" class='sidebar-link'>
+              <i data-feather="home" width="20"></i>
+              <span>Website Images</span>
+            </a>
+          </li>
           <li class="sidebar-item  has-sub">
             <a href="#" class='sidebar-link'>
               <i data-feather="triangle" width="20"></i>

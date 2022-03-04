@@ -17,7 +17,7 @@
     <li class="active"></li>
   </ol>
 </section>
-<form class="form-horizontal" method="POST" action="<?php echo base_url();?>Heroimage/changeImage" enctype="multipart/form-data">
+<form class="form-horizontal" method="POST" action="<?php echo base_url();?>Heroimage/insert" enctype="multipart/form-data">
   <!-- <form class="form-horizontal" method="POST" action="<?php echo base_url();?>Hero/updateFields" enctype="multipart/form-data"> -->
   <section class="content">
 
@@ -41,8 +41,8 @@
                   <input type="file" class="form-control" name="hero_image" value="">
                 </div>
                 <div class="col-md-6">
-                  <label class="fsize">aboutsubimage</label>
-                  <input type="file" class="form-control" name="about_subimage" value="">
+                  <label class="fsize">aboutsimage</label>
+                  <input type="file" class="form-control" name="aboutus_image" value="">
                 </div>
               </div>
             </div>

@@ -16,6 +16,7 @@ class Hero extends CI_Controller {
 	}
 
 	public function changeHeroText(){
+
 		$result = $this->Hero_model->changeHeroText($_POST['herotext_name']);
 		$resultDescription = $this->Hero_model->change_text_description($_POST['herotext_description']);
 		$storeText = $this->Hero_model->changeStoreText($_POST['store_text']);
