@@ -65,6 +65,29 @@ class Home extends CI_Controller {
     $heroText['heroImage']=$this->SiteImages_model->getheroImage();
     $heroText['aboutImage']=$this->SiteImages_model->getAboutUsImage();
     $heroText['aboutsubImage']=$this->SiteImages_model->getAboutsubImage();
+    $heroText['portfolioImage']=$this->SiteImages_model->getportfolioImage();
+    $heroText['portfolioImage1']=$this->SiteImages_model->getportfolioImage1();
+    $heroText['portfolioImage2']=$this->SiteImages_model->getportfolioImage2();
+    $heroText['portfolioImage3']=$this->SiteImages_model->getportfolioImage3();
+    $heroText['portfolioImage4']=$this->SiteImages_model->getportfolioImage4();
+    $heroText['portfolioImage5']=$this->SiteImages_model->getportfolioImage5();
+    $heroText['portfolioImage6']=$this->SiteImages_model->getportfolioImage6();
+    $heroText['portfolioImage7']=$this->SiteImages_model->getportfolioImage7();
+    $heroText['portfolioImage8']=$this->SiteImages_model->getportfolioImage8();
+    $heroText['portfolioImage9']=$this->SiteImages_model->getportfolioImage9();
+    $heroText['portfolioImage10']=$this->SiteImages_model->getportfolioImage10();
+    $heroText['portfolioImage11']=$this->SiteImages_model->getportfolioImage11();
+    $heroText['portfolioImage12']=$this->SiteImages_model->getportfolioImage12();
+    $heroText['portfolioImage13']=$this->SiteImages_model->getportfolioImage13();
+    $heroText['portfolioImage14']=$this->SiteImages_model->getportfolioImage14();
+    $heroText['portfolioImage15']=$this->SiteImages_model->getportfolioImage15();
+    $heroText['portfolioImage16']=$this->SiteImages_model->getportfolioImage16();
+    $heroText['portfolioImage17']=$this->SiteImages_model->getportfolioImage17();
+     //TEAM image
+     $heroText['teamImage1']=$this->SiteImages_model->getteamImage1();
+     $heroText['teamImage2']=$this->SiteImages_model->getteamImage2();
+     $heroText['teamImage3']=$this->SiteImages_model->getteamImage3();
+     $heroText['teamImage4']=$this->SiteImages_model->getteamImage4();
     // var_dump($heroText['aboutImage']);die;
 		$this->load->view('index',$heroText);
 	}

@@ -27,11 +27,12 @@ class SiteImages extends CI_Controller {
 		];
 		$config['upload_path'] = 'assets/img/heroimages/';
 		$config['allowed_types'] = 'jpg|jpeg|png|gif';
-		$config['file_name'] = $image_name;
-		$pic = $image_name;
+		$config['file_name'] = $_FILES['picture']['name'];
+		$pic = $_FILES['picture']['name'];
 		$this->load->library('upload',$config);
 		$this->upload->initialize($config);
-		$this->upload->do_upload($image_name);
+		$this->upload->do_upload('picture');
+    // var_dump($image_name);die;
 		$table=$this->table;
 		$result=$this->SiteImages_model->update_image($table,$condition,$update_array);
 		if($result){

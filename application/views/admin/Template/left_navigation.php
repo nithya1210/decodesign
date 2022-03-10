@@ -18,12 +18,12 @@
               <span>Herotextboxces</span>
             </a>
           </li>
-          <li class="sidebar-item active ">
+          <!-- <li class="sidebar-item active ">
             <a href="<?php echo base_url(); ?>Heroimage/" class='sidebar-link'>
               <i data-feather="home" width="20"></i>
               <span>HeroImage</span>
             </a>
-          </li>
+          </li> -->
           <li class="sidebar-item active ">
             <a href="<?php echo base_url(); ?>SiteImages/" class='sidebar-link'>
               <i data-feather="home" width="20"></i>
